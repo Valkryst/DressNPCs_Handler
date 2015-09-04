@@ -132,28 +132,28 @@ public class ConnectionScreenController implements ActionListener, KeyListener {
             final String username;
 
             // Ignore the background text of Server Address if that's all there is in the field:
-            if(!field_serverAddress.hasTextBeenEntered()) {
+            if(field_serverAddress.hasTextBeenEntered()) {
                 serverAddress = field_serverAddress.getText();
             } else {
                 serverAddress = "";
             }
 
             // Ignore the background text of Port if that's all there is in the field:
-            if(!field_mysqlPort.hasTextBeenEntered()) {
+            if(field_mysqlPort.hasTextBeenEntered()) {
                 port = field_mysqlPort.getText();
             } else {
                 port = "";
             }
 
             // Ignore the background text of Database Name if that's all there is in the field:
-            if(!field_databaseName.hasTextBeenEntered()) {
+            if(field_databaseName.hasTextBeenEntered()) {
                 databaseName = field_databaseName.getText();
             } else {
                 databaseName = "";
             }
 
             // Ignore the background text of Username if that's all there is in the field:
-            if(!field_username.hasTextBeenEntered()) {
+            if(field_username.hasTextBeenEntered()) {
                 username = field_username.getText();
             } else {
                 username = "";
