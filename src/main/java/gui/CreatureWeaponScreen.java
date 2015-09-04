@@ -281,10 +281,10 @@ public class CreatureWeaponScreen extends JPanel {
 
         // Item File DressNPC Handler - Action Listener:
         item_function_dressNPCHandler.addActionListener(e -> {
-            frame.setMinimumSize(DressNPCScreen.EXACT_FRAME_DIMENSIONS);
-            frame.setPreferredSize(DressNPCScreen.EXACT_FRAME_DIMENSIONS);
+            frame.setMinimumSize(DressNPCView.EXACT_FRAME_DIMENSIONS);
+            frame.setPreferredSize(DressNPCView.EXACT_FRAME_DIMENSIONS);
             frame.remove(this);
-            frame.add(new DressNPCScreen(frame, dataManager));
+            frame.add(new DressNPCController(frame, dataManager).getView());
             frame.pack();
         });
 
