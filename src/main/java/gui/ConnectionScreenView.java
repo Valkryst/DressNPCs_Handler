@@ -85,34 +85,42 @@ public class ConnectionScreenView extends VPanel {
         }
     }
 
+    /** @return The field for the IP or address of the server to connect to. */
     public VTextField getField_serverAddress() {
         return field_serverAddress;
     }
 
+    /** @return The field for the port to connect to MySQL on. */
     public VTextField getField_mysqlPort() {
         return field_mysqlPort;
     }
 
+    /** @return The field for the name of the MySQL database to connect to. */
     public VTextField getField_databaseName() {
         return field_databaseName;
     }
 
+    /** @return The field for the username to log into the MySQL database with. */
     public VTextField getField_username() {
         return field_username;
     }
 
+    /** @return The field for the password to log into the MySQL database with. */
     public VPasswordField getField_password() {
         return field_password;
     }
 
+    /** @return The button to submit the ip, port, database name, username, and password with. */
     public VButton getButton_submit() {
         return button_submit;
     }
 
+    /** @return The button to save the ip, port, database name, and username with. */
     public VButton getButton_save() {
         return button_save;
     }
 
+    /** @return The button to exit the program. */
     public VButton getButton_cancel() {
         return button_cancel;
     }
