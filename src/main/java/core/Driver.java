@@ -1,7 +1,7 @@
 package core;
 
 import component.VComponentGlobals;
-import gui.ConnectionScreen;
+import gui.ConnectionScreenController;
 import misc.Logger;
 import net.sf.image4j.codec.ico.ICODecoder;
 
@@ -74,7 +74,7 @@ public class Driver {
             }
         });
 
-        frame.add(new ConnectionScreen(frame));
+        frame.add(new ConnectionScreenController(frame).getView());
         frame.setResizable(false);
         frame.pack();
         frame.setLocationRelativeTo(null);
