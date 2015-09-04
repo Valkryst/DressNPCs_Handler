@@ -157,8 +157,8 @@ public class DressNPCController implements ActionListener {
                 }
             }
         } else if(source.equals(view.getItem_file_import())) {
-            final DressNPCImportDialog dialog = new DressNPCImportDialog(frame, model.getDataManager());
-            int selectedModel = dialog.getCurrentlySelectedModelID();
+            final DressNPCImportDialogController dialog = new DressNPCImportDialogController(frame, model.getDataManager());
+            int selectedModel = dialog.getModel().getCurrentlySelectedModelID();
 
             if(selectedModel >= 0) {
                 final Model npcModel = model.getDataManager().getModel(selectedModel);
