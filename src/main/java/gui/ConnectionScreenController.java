@@ -102,9 +102,9 @@ public class ConnectionScreenController implements ActionListener, KeyListener {
                     final DataManagerDressNPCs dataManager = new DataManagerDressNPCs(serverAddress, mysqlPort, databaseName, username, new String(password));
 
                     frame.remove(view);
-                    frame.add(new DressNPCScreen(frame, dataManager));
-                    frame.setMinimumSize(DressNPCScreen.EXACT_FRAME_DIMENSIONS);
-                    frame.setPreferredSize(DressNPCScreen.EXACT_FRAME_DIMENSIONS);
+                    frame.add(new DressNPCController(frame, dataManager).getView());
+                    frame.setMinimumSize(DressNPCView.EXACT_FRAME_DIMENSIONS);
+                    frame.setPreferredSize(DressNPCView.EXACT_FRAME_DIMENSIONS);
                     frame.setResizable(false);
                     frame.pack();
                     frame.setLocationRelativeTo(null);
